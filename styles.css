@@ -36,9 +36,9 @@ button {
   padding: 10px;
   border: 0;
   border-radius: 10px;
+  cursor: pointer;
 }
 button:active {
-  cursor: pointer;
   background-color: rgba(97, 175, 144, 0.788);
   box-shadow: 0 1px rgba(128, 128, 128, 0.5);
 }
