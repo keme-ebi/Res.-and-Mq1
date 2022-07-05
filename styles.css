@@ -58,20 +58,42 @@ form {
   border-radius: 10px;
   box-shadow: 0 7px rgba(128, 128, 128, 0.5);
 }
-form input {
-  padding: 10px;
+.form-control input {
+  padding: 20px;
   display: block;
 }
+
 input {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   width: 100%;
-  margin: 30px;
+  margin: 10px;
+  margin-bottom: 5px;
   margin-left: 0;
   padding: 50px;
   border: 2px solid hsl(246, 25%, 77%);
   border-radius: 5px;
 }
+
+.form-control.success input {
+  border-color: rgb(29, 199, 29);
+}
+
+.form-control.error input{
+ border-color: red;
+ background: url('icon-error.svg') no-repeat 95%;
+ 
+}
+
+.error-m{
+  color: red;
+  font-style: italic;
+  font-size: smaller;
+  text-align: right;
+  padding-bottom: 10px;
+  visibility: hidden;
+}
+
 h1,
 p {
   color: white;
@@ -99,11 +121,6 @@ footer p {
   color: hsl(246, 25%, 77%);
 }
 
-input:invalid{
- border-color: red;
- background: url('icon-error.svg') no-repeat 95%;
- 
-}
 
 /* mobile view */
 @media screen and (max-width: 600px) and (min-width: 200px) {
