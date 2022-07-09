@@ -8,6 +8,8 @@ function validateInput() {
   // firstname
   if (fname.value.trim() === '') {
     onError(fname, 'First Name cannot be empty');
+    let changeText = document.getElementById('fname');
+    changeText.setAttribute('placeholder', '');
   } else {
     onSuccess(fname);
   }
@@ -15,6 +17,8 @@ function validateInput() {
   //   last name
   if (lname.value.trim() === '') {
     onError(lname, 'Last Name cannot be empty');
+    let changeText = document.getElementById('lname');
+    changeText.setAttribute('placeholder', '');
   } else {
     onSuccess(lname);
   }
@@ -22,6 +26,8 @@ function validateInput() {
   //   email
   if (email.value.trim() === '') {
     onError(email, 'Looks like this is not an email');
+    let changeText = document.getElementById('email');
+    changeText.setAttribute('placeholder', 'email@example/com');
   } else {
     if (!isvalidEmail(email.value.trim())) {
       onError(email, 'email is not valid');
@@ -33,6 +39,8 @@ function validateInput() {
   //   password
   if (password.value.trim() === '') {
     onError(password, 'Password cannot be empty');
+    let changeText = document.getElementById('password');
+    changeText.setAttribute('placeholder', '');
   } else {
     onSuccess(password);
   }
